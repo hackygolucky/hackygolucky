@@ -1,0 +1,26 @@
+{
+  "name": "hackygolucky",
+  "version": "0.1.0",
+  "description": "My personal musings",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hackygolucky/hackygolucky.git"
+  },
+  "keywords": [
+    "blog"
+  ],
+  "author": "Tracy Hinds <tracyhinds@gmail.com> (http://hackygolucky.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hackygolucky/hackygolucky/issues"
+  },
+  "homepage": "https://github.com/hackygolucky/hackygolucky",
+  "dependencies": {
+    "hapi": "^8.3.1",
+    "nunjucks": "^1.2.0"
+  }
+}
