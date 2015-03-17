@@ -1,7 +1,7 @@
-CTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-  <!-- The language defaults to English - update accordingly if necessary -->
   <head>
+    <link href='http://fonts.googleapis.com/css?family=Codystar|Cabin+Sketch|Megrim|Cookie|Homemade_Apple|Satisfy' rel='stylesheet' type='text/css'>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,16 +9,218 @@ CTYPE html>
     <meta name="keywords" content="JavaScript, WIT, Tracy, hackgolucky, ice cream">
     <meta name="author" content="Tracy Hinds">
 
-    <title>hackygolucky.com</title>
+    <title>hackygolucky</title>
     <!-- PNG favicon -->
 
     <link rel="icon" type="image/png" href="img/favicon.png">
-    <!-- Main CSS file and normalize.css (https://github.com/necolas/normalize.css/) or reset of your preference  -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="" />
+    <style type="text/css">
+    body {
+      font-size: 10px;
+      background: rgb(207,255,221);
+      color: rgba(0,0,0,0.5);
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+    }
+    a {
+      color: rgba(0,0,0,0.65);
+      text-decoration: none;
+      -webkit-transition: color 0.25s linear;
+    }
+    a:hover {
+      color: rgba(0,0,0,0.9);
+    }
+    #watermark {
+      margin-bottom: 2em;
+      display: block;
+    }
+    #page {
+      max-width: 24em;
+      margin: 2em;
+      font-size: 1.6em;
+      line-height: 1.4;
+      font-family: 'Whitney A', 'Whitney B', Helvetica, sans-serif; 
+      -webkit-transition: all 0.25s ease-in;
+    }
+    #page h1 {
+      font-size: 2.2em;
+      line-height: 1;
+      margin: 0 0 0.75em 0;
+      font-weight: 300;
+      font-family:'Satisfy', cursive; 
+    }
+    #page p {
+      margin: 0.5em 0;
+      font-weight: 300;
+    }
+    #page .footnote {
+      font-size: 0.75em;
+      margin-top: 2em;
+      font-family: 'Whitney A', 'Whitney B', Helvetica,sans-serif;
+      color: rgba(0,0,0,0.35);
+      font-weight: 400;
+    }
+    #page .footnote a {
+      color: rgba(0,0,0,0.5);
+      text-decoration: none;
+      -webkit-transition: color 0.25s linear;
+    }
+    #page .footnote a:hover {
+      color: rgba(0,0,0,0.75);
+    }
+    #headshot {
+      display: none;
+      overflow: hidden;
+      width: 22em;
+      height: 27.125em;
+      position: fixed;
+      top: 0em;
+      right: 0;
+      text-align: right;
+      min-height: 500px;
+    }
+    
+    #headshot img {
+      width: auto;
+      height: 100%;
+    }
+    
+    #headshot .credit {
+      position: absolute;
+      right: 1em;
+      bottom: 1em;
+      margin: 0;
+      font-size: 0.75em;
+      color: rgba(255,255,255,0.25);
+      z-index: 1;
+      font-family: 'Whitney A', 'Whitney B',Helvetica,sans-serif;
+    }
+    #headshot .credit a {
+      color: rgba(255,255,255,0.35);
+    }
+    #headshot .credit a:hover {
+      color: rgba(255,255,255,0.5);
+    }
+    @media screen and (min-width: 920px) {
+      #headshot {
+        display: block;
+      }
+    }
+    @media screen and (min-width: 767px) {
+      #page {
+        margin-left: 4em;
+        margin-right: 4em;
+      }
+      #headshot {
+        right: 0em;
+      }
+    }
+    @media screen and (min-height: 600px) {
+      #page {
+        margin-top: 4em;
+        margin-bottom: 4em
+      }
+      #headshot {
+        top: 8em;
+      }
+    }
+    @media screen and (min-width: 1080px) {
+      #page {
+        margin-left: 8em;
+        margin-right: 8em;
+      }
+      #headshot {
+        right: 8em;
+      }
+    }
+    @media screen and (min-height: 767px) {
+      #page {
+        margin-top: 8em;
+        margin-bottom: 8em;
+      }
+      #headshot {
+        top: 12em;
+      }
+    }
+    @media screen and (min-width: 1200px) and (min-height: 600px) {
+      #headshot {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: auto;
+        text-align: right;
+        width: 42%;
+        height: auto;
+        min-height: 600px;
+      }
+      #headshot img {
+        height: 100%;
+        width: auto;
+      }
+      #headshot .credit {
+        margin-right: 1.5em;
+      }
+    }
+    @media screen and (min-width: 468px) {
+      #page {
+        font-size: 1.8em;
+      }
+    }
+    @media screen and (min-width: 1685px) {
+      #page {
+        padding-left: 5em;
+      }
+      #headshot {
+        margin-top: -3.5em;
+      }
+      #watermark {
+        position: absolute;
+        margin-left: -5em;
+        margin-top: 0.7em;
+      }
+    }
+    @media screen and (min-width: 1685px) and (min-height: 767px) {
+      #page {
+        font-size: 2.1em;
+      }
+    }
+    @media screen and (-webkit-min-device-pixel-ratio: 2) {
+      #watermark img {
+        width: 25px;
+        height: auto;
+      }
+    }
+    </style>
   </head>
-
   <body>
+    <div id="page">
+      <div id="watermark">
+        <!--<img src="images/a_logo.png" width="50" height="25">-->
+      </div>
+      <div id="headshot">
+        <img src="../images/tracy-finds-elk.jpg">
+      </div>
+      <section id="main">
+        <h1>Tracy Hinds</h1>
+        
+        <p><strong>Living, loving, coding the Big Apple.</strong></p>
+        
+        <p>Very much a rolling stone. Programmer by trade, but my interests are many!</p>
+
+        <p>Tracy web engineers at <a href="http://www.urbanairship.com/">Urban Airship</a>.</p>
+        
+        <p> If you'd like to get in touch, feel free to <a href="mailto:tracyhinds@gmail.com">send an email</a> or give a holler at <a href="http://twitter.com/hackygolucky">hackygolucky</a>.</p>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
     <!-- Content of your website or application -->
     <!-- Bundled JavaScript file -->
     <script src="nunjucks.js"></script>
